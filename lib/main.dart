@@ -9,9 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
+// P R O G R A M M I N G   F U N D A M E N T A L
   // VARIABLES: You can store different types of info into Variables.
   String name = "Vipin Maurya";
-  int age = 25;
+  int age = 17;
   double pie = 3.159;
   bool isBeginner = true;
 
@@ -36,6 +37,9 @@ COMPARISON OPERATORS:
 
 LOGICAL OPERATORS:
 
+
+
+
 AND operator, returns ture if both side are true
 
 isBeginner &&  ( age < 18 ) -> return false
@@ -47,15 +51,74 @@ isBeginner || ( age <= 18 ) -> return true
 NOT operators, returns the opposite value
 !isBeginner -> false
 
+*/
+
+/*
 
 
+C O N T R O L   F L O W 
 
+if(condition){
+do something  
+}
 
+if(condition){
+  do something
+
+}else{
+
+  do something
+
+}
+like :
+
+String grade = "F";
+
+    if (grade == "A") {
+      print("hey grade is $grade");
+    } else if (grade == "B") {
+      print("hey grade is $grade");
+    } else if (grade == "C") {
+      print("hey grade is $grade");
+    } else if (grade == "D") {
+      print("hey grade is $grade");
+    } else if (grade == "E") {
+      print("hey grade is $grade");
+    } else if (grade == "F") {
+      print("hey grade is $grade");
+    }
+
+in switch it will show like
+String grade = "L";
+    switch (grade) {
+      case "A":
+        print("grade is $grade");
+        break;
+      case "B":
+        print("grade is $grade");
+        break;
+      case "C":
+        print("grade is $grade");
+        break;
+      case "D":
+        print("grade is $grade");
+        break;
+      case "E":
+        print("grade is $grade");
+        break;
+      case "F":
+        print("grade is $grade");
+        break;
+      case "G":
+        print("grade is $grade");
+        break;
+      default:
+        print("Invalide Grade");
+    }
 */
 
   @override
   Widget build(BuildContext context) {
-    print(isBeginner && (age > 18));
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
